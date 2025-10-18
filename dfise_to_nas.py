@@ -1,10 +1,22 @@
 #!/usr/bin/env python3
 """
-Example script demonstrating DFISE to NAS export
+DFISE to NASTRAN (NAS) Export Utility
+
+Converts Synopsys Sentaurus TCAD DF-ISE mesh files to NASTRAN bulk data format.
 
 Usage:
-    python3 example_dfise_to_nas.py input.grd output.nas
-    python3 example_dfise_to_nas.py input.grd output.nas --surfaces
+    python3 dfise_to_nas.py input.grd output.nas
+    python3 dfise_to_nas.py input.grd output.nas --surfaces
+    
+Options:
+    --surfaces    Include boundary faces as CTRIA3 elements (default: volume only)
+    
+Examples:
+    # Export volume elements only
+    python3 dfise_to_nas.py device.grd device.nas
+    
+    # Export volume + boundary surfaces
+    python3 dfise_to_nas.py device.grd device_full.nas --surfaces
 """
 
 import sys
