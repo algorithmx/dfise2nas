@@ -1,0 +1,8 @@
+__pycache__/
+dfise/
+output_nas/
+
+*.nas
+*.grd
+.DS_Store
+
