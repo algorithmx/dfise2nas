@@ -6,3 +6,4 @@ output_nas/
 *.grd
 .DS_Store
 
+ParaviewReader_References/
