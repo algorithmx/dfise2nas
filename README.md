@@ -39,12 +39,14 @@ python3 dfise_to_nas.py input.grd output.nas --surfaces
 
 The parser analyzes **DF-ISE `.grd` files** (ASCII tetrahedral mesh format used by Synopsys Sentaurus TCAD) and provides:
 
+✅ **(new) Paraview Plugin** See [README.md](DFISEReaderPlugin/README.md) in `DFISEReaderPlugin` folder
 ✅ **Complete mesh statistics** (vertices, edges, faces, elements)  
 ✅ **Material region analysis** with element distribution  
 ✅ **Topological validation** (Euler characteristic, connectivity checks)  
 ✅ **Coordinate system transformations** (translation, rotation matrices)  
 ✅ **Robust error handling** with partial data recovery  
 ✅ **Export capabilities** (JSON format, NASTRAN/NAS format)
+
 
 ---
 
